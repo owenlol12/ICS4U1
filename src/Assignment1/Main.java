@@ -1,10 +1,5 @@
 package Assignment1;
 import java.util.*;
-import Assignment1.Card;
-import Assignment1.Card.Suit;
-import Assignment1.Card.Rank;
-import Assignment1.Card.Joker;
-import Assignment1.Deck;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +7,7 @@ public class Main {
         //create deck
         System.out.println("If Deck Has Jokers Type Y, If Not Type N"); 
         char joke = scan.nextLine().charAt(0);
-        Deck deck;
+        Deck deck = null;
         if (joke == 'Y'){
             deck = new Deck(true);
         }
@@ -40,17 +35,14 @@ public class Main {
         System.out.println(d1);
         System.out.println(d2);
 
-        //checdk if deck is empty
+        //checNk if deck is empty
         if (deck.isEmpty()){
         System.out.println("Deck is Empty");
         }
         else{
         System.out.println("Deck is not Empty"); 
-        System.out.println("Remaining Cards: "); 
-        for (Card card : deck){
-
-        }
-        }
+        System.out.println("Remaining Cards: "+ deck.size()); 
         
+        }
         }
     }
