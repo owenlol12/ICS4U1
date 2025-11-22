@@ -1,3 +1,9 @@
+/*
+ * Author: Owen Lu
+ * Date: Nov 21, 2025
+ * Problem: CCC '10 J5
+ * Description: Finding the shortest amount moves it can take for a knight to move from one point to another on a chess board.
+ */
 package Assignment3;
 import java.util.*;
 
