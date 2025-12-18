@@ -36,19 +36,19 @@ public class KnightHop {
         int[] moveX = {2, 2, -2, -2, 1, 1, -1, -1};
         int[] moveY = {1, -1, 1, -1, 2, -2, 2, -2};
         
-        // Run BFS Loop
+        // run BFS Loop
         while (!queue.isEmpty()) {
             int[] current = queue.poll();
             int cX = current[0];
             int cY = current[1];
 
-            // If we reached the target, print moves and exit
+            // if we reached the target, print moves and exit
             if (cX == endX && cY == endY) {
                 System.out.println(visited[cX][cY]);
                 return;
             }
 
-            // Try all 8 moves
+            // try all 8 moves
             for (int i = 0; i < 8; i++) {
                 int nextX = cX + moveX[i];
                 int nextY = cY + moveY[i];
